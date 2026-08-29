@@ -204,7 +204,49 @@ window.IMAGES = {
    Formato: { number, name, ra, digit, email }
    Se a lista ficar vazia, o formulário usa campos de texto livre.
    ========================================================================= */
-const ROSTER = [];
+const ROSTER = [
+  { number:1, name:"EVELYN LUANE DE SENA ALVES", ra:"112219637", digit:"4", email:"00001122196374SP@al.educacao.sp.gov.br" },
+  { number:2, name:"GABRIEL RONDINI DA SILVA", ra:"112208931", digit:"4", email:"00001122089314SP@al.educacao.sp.gov.br" },
+  { number:3, name:"GUSTAVO HENRIQUE FIGUEREDO CARVALHO", ra:"120369358", digit:"8", email:"00001203693588SP@al.educacao.sp.gov.br" },
+  { number:4, name:"JOAO MARCOS DANTAS DA SILVA", ra:"112212796", digit:"0", email:"00001122127960SP@al.educacao.sp.gov.br" },
+  { number:5, name:"MIGUEL DE OLIVEIRA AQUINO", ra:"112228039", digit:"7", email:"00001122280397SP@al.educacao.sp.gov.br" },
+  { number:6, name:"PEDRO HENRIQUE FAGUNDES DE LIMA", ra:"112221851", digit:"5", email:"00001122218515SP@al.educacao.sp.gov.br" },
+  { number:7, name:"PEDRO MIGUEL ALMEIDA DO NASCIMENTO", ra:"111128972", digit:"4", email:"00001111289724SP@al.educacao.sp.gov.br" },
+  { number:8, name:"WILLIAN ROBERTO DUARTE", ra:"111401688", digit:"3", email:"00001114016883SP@al.educacao.sp.gov.br" },
+  { number:9, name:"YGOR BRYAN SILVA OLIVEIRA", ra:"121492670", digit:"8", email:"00001214926708SP@al.educacao.sp.gov.br" },
+  { number:11, name:"ANA JÚLLIA LIMA CLAUDIO", ra:"112220804", digit:"2", email:"00001122208042SP@al.educacao.sp.gov.br" },
+  { number:12, name:"AYSHILLA PEREIRA DOS SANTOS", ra:"112039230", digit:"5", email:"00001120392305SP@al.educacao.sp.gov.br" },
+  { number:13, name:"HYAGO SANTOS XAVIER", ra:"113206434", digit:"X", email:"0000113206434XSP@al.educacao.sp.gov.br" },
+  { number:14, name:"JULIA DARRIBA CESTARI", ra:"113207466", digit:"6", email:"00001132074666SP@al.educacao.sp.gov.br" },
+  { number:15, name:"JULIANA CRISTINA ARAUJO OLIVEIRA", ra:"113216426", digit:"6", email:"00001132164266SP@al.educacao.sp.gov.br" },
+  { number:16, name:"KAUANY COSTA HELUANY", ra:"110458664", digit:"2", email:"00001104586642SP@al.educacao.sp.gov.br" },
+  { number:17, name:"LUDIMILA NEVES DA SILVA", ra:"112217185", digit:"7", email:"00001122171857SP@al.educacao.sp.gov.br" },
+  { number:18, name:"MATHEUS CRISTHOFER OLIVEIRA DE SOUZA RAMOS", ra:"114156387", digit:"3", email:"00001141563873SP@al.educacao.sp.gov.br" },
+  { number:19, name:"PABLO HENRIQUE DA PAIXÃO TEIXEIRA", ra:"120994167", digit:"3", email:"00001209941673SP@al.educacao.sp.gov.br" },
+  { number:20, name:"YAGO COLDI BELI AZEVEDO DA SILVA", ra:"112049371", digit:"7", email:"00001120493717SP@al.educacao.sp.gov.br" },
+  { number:23, name:"JOÃO MANOEL DO NASCIMENTO MENEZES", ra:"112096075", digit:"7", email:"00001120960757SP@al.educacao.sp.gov.br" },
+  { number:24, name:"IAGO FELIPE SANDRIN BERTIN", ra:"114186470", digit:"8", email:"00001141864708SP@al.educacao.sp.gov.br" },
+  { number:25, name:"ANDRE FRANCESCHINI SOARES", ra:"113059025", digit:"2", email:"00001130590252SP@al.educacao.sp.gov.br" },
+  { number:27, name:"ANA JULIA ROCHA DE JESUS", ra:"111403521", digit:"X", email:"0000111403521XSP@al.educacao.sp.gov.br" },
+  { number:28, name:"JULIA DE CASTRO CARDOSO", ra:"113209355", digit:"7", email:"00001132093557SP@al.educacao.sp.gov.br" },
+  { number:29, name:"MANUELA TELES DE OLIVEIRA", ra:"110498132", digit:"4", email:"00001104981324SP@al.educacao.sp.gov.br" },
+  { number:30, name:"RAISSA VITORIA LENARES SANTOS", ra:"114151501", digit:"5", email:"00001141515015SP@al.educacao.sp.gov.br" },
+  { number:32, name:"BRENO APARECIDO DE SOUSA NASCIMENTO", ra:"114146626", digit:"0", email:"00001141466260SP@al.educacao.sp.gov.br" },
+  { number:34, name:"YASMIN CABRAL KELER DOMINGUES", ra:"112213900", digit:"7", email:"00001122139007SP@al.educacao.sp.gov.br" },
+  { number:35, name:"MARIA CLARA COSTA MARTINS", ra:"113208116", digit:"6", email:"00001132081166SP@al.educacao.sp.gov.br" },
+  { number:36, name:"JOAO VICTOR DE CARVALHO SANTOS", ra:"109485196", digit:"6", email:"00001094851966SP@al.educacao.sp.gov.br" },
+  { number:37, name:"MYLLENA CARDOZO FERREIRA", ra:"113212612", digit:"5", email:"00001132126125SP@al.educacao.sp.gov.br" },
+  { number:38, name:"LUDMILA SILVA FELICIANO", ra:"112496089", digit:"2", email:"00001124960892SP@al.educacao.sp.gov.br" },
+  { number:40, name:"LEONARDO RIKELME NUNES", ra:"113208776", digit:"4", email:"00001132087764SP@al.educacao.sp.gov.br" },
+  { number:42, name:"GABRIEL FELIPO DE MORAIS", ra:"112219357", digit:"9", email:"00001122193579SP@al.educacao.sp.gov.br" },
+  { number:43, name:"MIKAELLI PARMEGIANI MATHIAS", ra:"112222661", digit:"5", email:"00001122226615SP@al.educacao.sp.gov.br" },
+  { number:44, name:"EMILLY FERNANDES", ra:"111713689", digit:"9", email:"00001117136899SP@al.educacao.sp.gov.br" },
+  { number:45, name:"LOHAYNI VICTORIA TAVARES DOS SANTOS", ra:"113851262", digit:"X", email:"" },
+  { number:46, name:"EMILLY STEPHANIE CAMARGO DE JESUS", ra:"111847068", digit:"0", email:"00001118470680SP@al.educacao.sp.gov.br" },
+  { number:47, name:"MAISSA QUERCIA GALLO", ra:"112131726", digit:"1", email:"00001121317261SP@al.educacao.sp.gov.br" },
+  { number:48, name:"MANUELA LEDIER DE ABREU", ra:"115125705", digit:"9", email:"00001151257059SP@al.educacao.sp.gov.br" },
+  { number:49, name:"IASMIN DE SOUZA ALBERTO", ra:"111571604", digit:"9", email:"00001115716049SP@al.educacao.sp.gov.br" },
+];
 
 const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzk9ILh4FZamUxTcdq27de6nEsuQPTvZOG4FPasImlqdFVhu5K5ZiRcurj3yp4LVThd/exec";
 </script>
